@@ -1,0 +1,7 @@
+# tkinter suele distribuirse con Python en Windows.
+# Gráficas de eventos (busqueda.py no requiere paquetes extra):
+matplotlib
+# Para fase de cámara futura, instalar por separado paquetes compatibles:
+# opencv-python
+# mediapipe
+# numpy
