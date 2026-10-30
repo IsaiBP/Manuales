@@ -1,0 +1,5 @@
+﻿fecha_hora,origen,escenario,nivel,puntuacion,ojos_cerrados_seg,parpadeos_min,bostezos_min,inclinacion_grados,rostro_visible,motivos
+2026-10-22T17:01:24,SIMULADO,Conducción normal,NORMAL,0,0.2,16,0,5,True,
+2026-10-22T17:01:24,SIMULADO,Cansancio leve,PRECAUCIÓN,2,1.5,24,1,12,True,Ojos cerrados más de lo habitual
+2026-10-22T17:01:24,SIMULADO,Somnolencia alta,ALERTA ALTA,9,3,33,4,35,True,Cierre prolongado de ojos; Frecuencia de parpadeo elevada; Bostezos frecuentes; Inclinación pronunciada de la cabeza
+2026-10-22T17:01:24,SIMULADO,Rostro no visible,SIN ROSTRO,0,0,0,0,0,False,No se detecta el rostro

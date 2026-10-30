@@ -36,6 +36,8 @@ def leer_eventos():
     """Devuelve (filas, es_ejemplo)."""
     archivo = EVENTOS if EVENTOS.exists() else EJEMPLO
     es_ejemplo = not EVENTOS.exists()
+    if not archivo.exists():
+        return [], True
     with archivo.open(newline='', encoding='utf-8-sig') as f:
         return list(csv.DictReader(f)), es_ejemplo
 
@@ -162,6 +164,9 @@ class VentanaGraficas(tk.Toplevel):
 
     def dibujar(self):
         filas, es_ejemplo = leer_eventos()
+        if not filas:
+            self.nota.config(text='Sin datos: registra lecturas para graficar.')
+            return
         self.nota.config(text='Datos de ejemplo (aún no hay registros)'
                          if es_ejemplo else f'{len(filas)} registro(s) en eventos.csv')
         fig = GRAFICAS[self.elegida.get()](filas)
